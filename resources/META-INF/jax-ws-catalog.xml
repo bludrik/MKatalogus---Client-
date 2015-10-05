@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://Balazs-PC:8080/MovieCatalogue/CatalogueService?wsdl" uri="wsdl/Balazs-PC_8080/MovieCatalogue/CatalogueService.wsdl"/>
+    <system systemId="http://Balazs-PC:8080/MovieCatalogue/CatalogueService?xsd=1" uri="wsdl/Balazs-PC_8080/MovieCatalogue/CatalogueService.xsd_1.xsd"/>
+</catalog>

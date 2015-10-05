@@ -1,0 +1,536 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2.0-1 (tags/2.2.0u1-7139; 2012-06-02T10:55:19+0000) JAXWS-RI/2.2.6-2 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://endpoint.catalogue/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://endpoint.catalogue/">
+
+<xs:element name="deleteDirectorsService" type="tns:deleteDirectorsService"/>
+
+<xs:element name="deleteDirectorsServiceResponse" type="tns:deleteDirectorsServiceResponse"/>
+
+<xs:element name="deleteGenreService" type="tns:deleteGenreService"/>
+
+<xs:element name="deleteGenreServiceResponse" type="tns:deleteGenreServiceResponse"/>
+
+<xs:element name="deleteMoviesService" type="tns:deleteMoviesService"/>
+
+<xs:element name="deleteMoviesServiceResponse" type="tns:deleteMoviesServiceResponse"/>
+
+<xs:element name="deleteReleaseService" type="tns:deleteReleaseService"/>
+
+<xs:element name="deleteReleaseServiceResponse" type="tns:deleteReleaseServiceResponse"/>
+
+<xs:element name="directorItem" type="tns:directorItem"/>
+
+<xs:element name="genreItem" type="tns:genreItem"/>
+
+<xs:element name="getDirectorIdByNameService" type="tns:getDirectorIdByNameService"/>
+
+<xs:element name="getDirectorIdByNameServiceResponse" type="tns:getDirectorIdByNameServiceResponse"/>
+
+<xs:element name="getDirectorNameByIdService" type="tns:getDirectorNameByIdService"/>
+
+<xs:element name="getDirectorNameByIdServiceResponse" type="tns:getDirectorNameByIdServiceResponse"/>
+
+<xs:element name="getDirectorOfMovieService" type="tns:getDirectorOfMovieService"/>
+
+<xs:element name="getDirectorOfMovieServiceResponse" type="tns:getDirectorOfMovieServiceResponse"/>
+
+<xs:element name="getDirectorsFilteredByNameService" type="tns:getDirectorsFilteredByNameService"/>
+
+<xs:element name="getDirectorsFilteredByNameServiceResponse" type="tns:getDirectorsFilteredByNameServiceResponse"/>
+
+<xs:element name="getDirectorsService" type="tns:getDirectorsService"/>
+
+<xs:element name="getDirectorsServiceResponse" type="tns:getDirectorsServiceResponse"/>
+
+<xs:element name="getGenreIdByNameService" type="tns:getGenreIdByNameService"/>
+
+<xs:element name="getGenreIdByNameServiceResponse" type="tns:getGenreIdByNameServiceResponse"/>
+
+<xs:element name="getGenreNameByIdService" type="tns:getGenreNameByIdService"/>
+
+<xs:element name="getGenreNameByIdServiceResponse" type="tns:getGenreNameByIdServiceResponse"/>
+
+<xs:element name="getGenreOfMovieService" type="tns:getGenreOfMovieService"/>
+
+<xs:element name="getGenreOfMovieServiceResponse" type="tns:getGenreOfMovieServiceResponse"/>
+
+<xs:element name="getGenresService" type="tns:getGenresService"/>
+
+<xs:element name="getGenresServiceResponse" type="tns:getGenresServiceResponse"/>
+
+<xs:element name="getMovieByKeyService" type="tns:getMovieByKeyService"/>
+
+<xs:element name="getMovieByKeyServiceResponse" type="tns:getMovieByKeyServiceResponse"/>
+
+<xs:element name="getMoviesFilteredByDirectorService" type="tns:getMoviesFilteredByDirectorService"/>
+
+<xs:element name="getMoviesFilteredByDirectorServiceResponse" type="tns:getMoviesFilteredByDirectorServiceResponse"/>
+
+<xs:element name="getMoviesFilteredByGenreService" type="tns:getMoviesFilteredByGenreService"/>
+
+<xs:element name="getMoviesFilteredByGenreServiceResponse" type="tns:getMoviesFilteredByGenreServiceResponse"/>
+
+<xs:element name="getMoviesFilteredByTitleService" type="tns:getMoviesFilteredByTitleService"/>
+
+<xs:element name="getMoviesFilteredByTitleServiceResponse" type="tns:getMoviesFilteredByTitleServiceResponse"/>
+
+<xs:element name="getMoviesFilteredByTypeService" type="tns:getMoviesFilteredByTypeService"/>
+
+<xs:element name="getMoviesFilteredByTypeServiceResponse" type="tns:getMoviesFilteredByTypeServiceResponse"/>
+
+<xs:element name="getMoviesService" type="tns:getMoviesService"/>
+
+<xs:element name="getMoviesServiceResponse" type="tns:getMoviesServiceResponse"/>
+
+<xs:element name="getReleaseIdByNameService" type="tns:getReleaseIdByNameService"/>
+
+<xs:element name="getReleaseIdByNameServiceResponse" type="tns:getReleaseIdByNameServiceResponse"/>
+
+<xs:element name="getReleaseNameByIdService" type="tns:getReleaseNameByIdService"/>
+
+<xs:element name="getReleaseNameByIdServiceResponse" type="tns:getReleaseNameByIdServiceResponse"/>
+
+<xs:element name="getReleasesService" type="tns:getReleasesService"/>
+
+<xs:element name="getReleasesServiceResponse" type="tns:getReleasesServiceResponse"/>
+
+<xs:element name="insertDirectorService" type="tns:insertDirectorService"/>
+
+<xs:element name="insertDirectorServiceResponse" type="tns:insertDirectorServiceResponse"/>
+
+<xs:element name="insertGenreService" type="tns:insertGenreService"/>
+
+<xs:element name="insertGenreServiceResponse" type="tns:insertGenreServiceResponse"/>
+
+<xs:element name="insertMovieService" type="tns:insertMovieService"/>
+
+<xs:element name="insertMovieServiceResponse" type="tns:insertMovieServiceResponse"/>
+
+<xs:element name="insertReleaseService" type="tns:insertReleaseService"/>
+
+<xs:element name="insertReleaseServiceResponse" type="tns:insertReleaseServiceResponse"/>
+
+<xs:element name="movieItem" type="tns:movieItem"/>
+
+<xs:element name="releaseItem" type="tns:releaseItem"/>
+
+<xs:element name="updateDirectorService" type="tns:updateDirectorService"/>
+
+<xs:element name="updateDirectorServiceResponse" type="tns:updateDirectorServiceResponse"/>
+
+<xs:element name="updateGenreService" type="tns:updateGenreService"/>
+
+<xs:element name="updateGenreServiceResponse" type="tns:updateGenreServiceResponse"/>
+
+<xs:element name="updateMovieService" type="tns:updateMovieService"/>
+
+<xs:element name="updateMovieServiceResponse" type="tns:updateMovieServiceResponse"/>
+
+<xs:element name="updateReleaseService" type="tns:updateReleaseService"/>
+
+<xs:element name="updateReleaseServiceResponse" type="tns:updateReleaseServiceResponse"/>
+
+<xs:complexType name="getDirectorIdByNameService">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDirectorIdByNameServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDirectorsService">
+<xs:sequence>
+<xs:element name="keys" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDirectorsServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMoviesFilteredByDirectorService">
+<xs:sequence>
+<xs:element name="directorName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMoviesFilteredByDirectorServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:movieSubItem" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="movieSubItem">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="titleHU" type="xs:string" minOccurs="0"/>
+<xs:element name="type" type="xs:string" minOccurs="0"/>
+<xs:element name="year" type="xs:short"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getReleaseIdByNameService">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getReleaseIdByNameServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateGenreService">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="newName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateGenreServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateDirectorService">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="director" type="tns:directorItem" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="directorItem">
+<xs:sequence>
+<xs:element name="birth" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="birthplace" type="xs:string" minOccurs="0"/>
+<xs:element name="firstname" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="lastname" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateDirectorServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGenreIdByNameService">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGenreIdByNameServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getReleaseNameByIdService">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getReleaseNameByIdServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getReleasesService">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getReleasesServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:releaseItem" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="releaseItem">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateMovieService">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="modifiedItem" type="tns:movieItem" minOccurs="0"/>
+<xs:element name="modifiedGenreIdx" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="modifiedDirectorIdx" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="movieItem">
+<xs:sequence>
+<xs:element name="amount" type="xs:int" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="imdbUrl" type="xs:string" minOccurs="0"/>
+<xs:element name="releaseid" type="xs:int" minOccurs="0"/>
+<xs:element name="titleHu" type="xs:string" minOccurs="0"/>
+<xs:element name="titleOrig" type="xs:string" minOccurs="0"/>
+<xs:element name="type" type="xs:string" minOccurs="0"/>
+<xs:element name="year" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateMovieServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDirectorsFilteredByNameService">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDirectorsFilteredByNameServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:directorItem" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGenreOfMovieService">
+<xs:sequence>
+<xs:element name="movieId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGenreOfMovieServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGenreNameByIdService">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGenreNameByIdServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteReleaseService">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteReleaseServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateReleaseService">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="newName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateReleaseServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGenresService">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getGenresServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:genreItem" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="genreItem">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDirectorNameByIdService">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDirectorNameByIdServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMoviesService">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getMoviesServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:movieSubItem" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteMoviesService">
+<xs:sequence>
+<xs:element name="pKeys" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteMoviesServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDirectorOfMovieService">
+<xs:sequence>
+<xs:element name="movieId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDirectorOfMovieServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMoviesFilteredByTitleService">
+<xs:sequence>
+<xs:element name="title" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMoviesFilteredByTitleServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:movieSubItem" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertMovieService">
+<xs:sequence>
+<xs:element name="movie" type="tns:movieItem" minOccurs="0"/>
+<xs:element name="genreIdx" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="directorIdx" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertMovieServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMoviesFilteredByGenreService">
+<xs:sequence>
+<xs:element name="genre" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMoviesFilteredByGenreServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:movieSubItem" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertGenreService">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertGenreServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDirectorsService">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getDirectorsServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:directorItem" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMoviesFilteredByTypeService">
+<xs:sequence>
+<xs:element name="type" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMoviesFilteredByTypeServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:movieSubItem" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertReleaseService">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertReleaseServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteGenreService">
+<xs:sequence>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteGenreServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertDirectorService">
+<xs:sequence>
+<xs:element name="director" type="tns:directorItem" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertDirectorServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMovieByKeyService">
+<xs:sequence>
+<xs:element name="key" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMovieByKeyServiceResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:movieItem" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
